@@ -1,0 +1,7 @@
+/* css to make sure image in modal fit and didn't exceed modal size */
+#modalImg {
+    width: auto;
+    height: auto;
+    max-width: 100%; 
+}
+

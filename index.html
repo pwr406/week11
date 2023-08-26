@@ -8,8 +8,10 @@
       rel="stylesheet"
       href="./node_modules/bootstrap/dist/css/bootstrap.css"
     />
+    <link rel="stylesheet" href="/styles.css" />
 </head>
 <body>
+    <!-- container and heading text -->
     <div class ="container text-center">
         <div class="row">
             <div class ="column">
@@ -17,7 +19,7 @@
             </div>
         </div>
     </div>
-
+    <!-- announcement text, start game button -->
     <div class = "container text-center">
         <div class = "row">
             <div class = "column">
@@ -26,7 +28,7 @@
             </div>
         </div>
     </div>
-
+    <!-- Game board created using a table -->
     <div class = "container mt-5 text-center">
         <div class = "row">
             <table class="table table-bordered border-black">
@@ -51,7 +53,7 @@
               </table>
         </div>
     </div>
-
+    <!-- Clear the game board button -->
     <div class ="container text-center mt-5">
         <div class ="row">
             <div class ="container">
@@ -64,11 +66,12 @@
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
         <div class="modal-header">
+            <h4 class="col text-center display-3" id="modalHeader"></h4>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         
-        <div class="modal-body fs-1 text-center" id="myModalBody">
-          ...
+        <div class="modal-body justify-content-center" id="myModalBody">
+          <p class="mb-0"><img class="mx-auto d-block" id="modalImg" src="" alt =""></p>
         </div>
         <div class="modal-footer justify-content-center">
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -80,6 +83,7 @@
     <script src="node_modules/jquery/dist/jquery.js"></script>
     <script src="node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="confetti.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
